@@ -22,7 +22,7 @@ Esta es la modalidad donde el jugador tendrá que explorar y poner a prueba su a
 
 ## Resguardando tesoros
 
-Aquí el jugador podrá retar a los aventureros creando mazmorras desafiantes.
+Aquí el jugador podrá desafiar a los aventureros creando mazmorras desafiantes.
 
 # Mazmorra
 
@@ -53,7 +53,7 @@ Posibles ideas:
 
 # Juego
 
-El juego consiste en que el jugador logre llevar al menos uno de sus personajes al cofre de la mazmorra.
+El juego consiste en que el jugador logre alcanzar el cofre con al menos uno de sus personajes.
 
 * Si el jugador supera el máximo de acciones pierde.
 * Si todos los personajes mueren el jugador pierde.
@@ -67,67 +67,41 @@ Posibles ideas:
 * Que existan personajes con movimientos distintos.
 * Que cada personaje posea una habilidad especial.
 
-|  Nombre  | Salud | Daño |  Patrón Ataque |
-|----------|------|--------|----------------|
-| Guerrero |   5  |   2    |[Ver](#Guerrero)|
-| Arquero  |   4  |   4    |[Ver](#Arquero) |
-|  Mago    |   3  |   5    |  [Ver](#Mago)  |
+|  Nombre  | Salud | Daño   | Precio |  Patrón Ataque |
+|----------|-------|--------|--------|----------------|
+| Guerrero |   5   |   2    |   1    |[Ver](#Guerrero)|
+| Arquero  |   4   |   4    |   2    |[Ver](#Arquero) |
+|  Mago    |   3   |   5    |   3    |  [Ver](#Mago)  |
 
 ## Patrones de Ataque
 
 ### Guerrero
 
-    +---+---+---+
-    | o | o | o |
-    +---+---+---+
-    | o | x | o |
-    +---+---+---+
-    | o | o | o |
-    +---+---+---+
+![apwarrior](assets/attack-pattern-warrior.png?raw=**true**)
 
     Cualquier casilla alrededor.
     Distancia: 1
 
 ### Arquero
 
-    +---+---+---+---+---+
-    | o |   | o |   | o |
-    +---+---+---+---+---+
-    |   |   |   |   |   |
-    +---+---+---+---+---+
-    | o |   | x |   | o |
-    +---+---+---+---+---+
-    |   |   |   |   |   |
-    +---+---+---+---+---+
-    | o |   | o |   | o |
-    +---+---+---+---+---+
+![aparcher](assets/attack-pattern-archer.png?raw=**true**)
 
     Mas de una casilla de separación.
     Distancia: Infinito
 
 ### Mago
 
-    +---+---+---+---+---+---+---+
-    |   | o | o | o | o | o |   |
-    +---+---+---+---+---+---+---+
-    | o | o | o | o | o | o | o |
-    +---+---+---+---+---+---+---+
-    | o | o |   |   |   | o | o |
-    +---+---+---+---+---+---+---+
-    | o | o |   | x |   | o | o |
-    +---+---+---+---+---+---+---+
-    | o | o |   |   |   | o | o |
-    +---+---+---+---+---+---+---+
-    | o | o | o | o | o | o | o |
-    +---+---+---+---+---+---+---+
-    |   | o | o | o | o | o |   |
-    +---+---+---+---+---+---+---+
+![apwizzard](assets/attack-pattern-wizzard.png?raw=**true**)
 
     Mas de una casilla de separación.
     Distancia: 2.
 
 # Mazmorra de ejemplo
 
-![]: https://github.com/JABvzla/dungeon-maker-mock/raw/master/assets/dungeon-1.0.png
+En el siguiente ejemplo vamos a resolver la siguiente mazmorra en sus diferentes posibilidades.
 
-![]: https://github.com/JABvzla/dungeon-maker-mock/raw/master/assets/dungeon-1.1.png
+![dungeon10](assets/dungeon-1.0.png?raw=**true**)
+
+![dungeon11](assets/dungeon-1.1.png?raw=true)
+
+![dungeon12](assets/dungeon-1.11.png?raw=true)
