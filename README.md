@@ -68,7 +68,7 @@ Posibles ideas:
 * Que cada personaje posea una habilidad especial.
 
 |  Nombre  | Salud | Daño   | Precio |  Patrón Ataque |
-|----------|-------|--------|--------|----------------|
+|:---------|:-----:|:------:|:------:|:--------------:|
 | Guerrero |   5   |   2    |   1    |[Ver](#Guerrero)|
 | Arquero  |   4   |   4    |   2    |[Ver](#Arquero) |
 |  Mago    |   3   |   5    |   3    |  [Ver](#Mago)  |
