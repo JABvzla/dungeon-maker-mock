@@ -126,26 +126,8 @@ Posibles ideas:
     Mas de una casilla de separación.
     Distancia: 2.
 
-
 # Mazmorra de ejemplo
 
-    =====================
-    |          t      C |
-    |/ -|    ============
-    |   |         e   e |
-    |   =============   |
-    | E           i     |
-    |    ================
-    |             E |
-    =============   |
-    | x             |
-    =================
+![]: https://github.com/JABvzla/dungeon-maker-mock/raw/master/assets/dungeon-1.0.png
 
-    |  = Pared
-    =  = Pared
-    /  = Puerta
-    i  = Interruptor abre puerta
-    E  = enemigo grande -2 salud
-    e  = enemigo pequeño -1 salud
-    t  = trampa -1 salud
-
+![]: https://github.com/JABvzla/dungeon-maker-mock/raw/master/assets/dungeon-1.1.png
