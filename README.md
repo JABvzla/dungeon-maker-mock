@@ -12,7 +12,7 @@ Juego de estrategia donde deberás adentrarte en una mazmorra para alcanzar el t
   * [Tope de Monedas](#Tope-de-Monedas)
 * [Jugador](#Jugador)
   * [Monedas](#Monedas)
-  * [Personaje](#Personaje)
+  * [Personajes](#Personajes)
 
 # Modalidades
 
@@ -22,19 +22,19 @@ Esta es la modalidad donde el jugador tendrá que explorar y poner a prueba su a
 
 ## Resguardando tesoros
 
-Aquí el jugador podrá desafiar a los aventureros creando mazmorras desafiantes.
+Aquí el jugador podrá desafiar a los aventureros creando mazmorras.
 
 # Mazmorra
 
-La mazmorra es el escenario donde se pondrán a prueba los jugadores para conseguir llevarse el tesoro.
+La mazmorra es el escenario donde se pondrán a prueba los jugadores para intentar llevarse el tesoro.
 
 ## Valor
 
-El valor de la mazmorra aumenta según el tope de monedas, tope de acciones, cantidad de recursos utilizados para crear la mazmorra y cantidad de jugadores que perdieron en dicha mazmorra, a mayor valor mayor recompensa obtendrá el jugador al superar la mazmorra. Cada vez que un jugador supere la mazmorra el valor bajara.
+El valor de la mazmorra aumenta según el [tope de monedas](#Tope-de-Monedas), [tope de acciones](#Tope-de-Acciones), cantidad de recursos utilizados para crear la mazmorra y cantidad de jugadores que perdieron en dicha mazmorra, a mayor valor mayor recompensa obtendrá el jugador al superar la mazmorra. Cada vez que un jugador supere la mazmorra el valor bajara.
 
 ## Tope de Monedas
 
-Cada mazmorra impondrá un tope máximo de monedas a gastar para cada intento, estas monedas a su vez serán usada por el jugador para comprar los personajes que usará en dicho intento.
+Cada mazmorra impondrá un tope máximo de [monedas](#Monedas) a gastar para cada intento, estas [monedas](#Monedas) a su vez serán usada por el jugador para comprar los [personajes](#Personajes) que usará en dicho intento.
 
 ## Tope de Acciones
 
@@ -44,7 +44,7 @@ La mazmorra posee un tope máximo de acciones para que el jugador supere la mazm
 
 ## Monedas
 
-Las monedas son el recurso del jugador para comprar personajes antes de intentar realizar una mazmorra.
+Las monedas son el recurso del jugador para comprar [personajes](#Personajes) antes de intentar realizar una mazmorra.
 
 Posibles ideas:
 
@@ -53,10 +53,10 @@ Posibles ideas:
 
 # Juego
 
-El juego consiste en que el jugador logre alcanzar el cofre con al menos uno de sus personajes.
+El juego consiste en que el jugador logre alcanzar el cofre con al menos uno de sus [personajes](#Personajes).
 
 * Si el jugador supera el máximo de acciones pierde.
-* Si todos los personajes mueren el jugador pierde.
+* Si todos los [personajes](#Personajes) mueren el jugador pierde.
 
 ## Personajes
 
