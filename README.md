@@ -6,30 +6,30 @@ Juego de estrategia donde deberás adentrarte en una mazmorra para alcanzar el t
 ## Tabla de Contenido
 
 - [DUNGEON MAKER](#dungeon-maker)
-    - [Tabla de Contenido](#tabla-de-contenido)
+  - [Tabla de Contenido](#tabla-de-contenido)
 - [Modalidades](#modalidades)
-    - [Cazando tesoros](#cazando-tesoros)
-    - [Resguardando tesoros](#resguardando-tesoros)
+  - [Cazando tesoros](#cazando-tesoros)
+  - [Resguardando tesoros](#resguardando-tesoros)
 - [Mazmorra](#mazmorra)
-    - [Valor](#valor)
-    - [Tope de Monedas](#tope-de-monedas)
-    - [Tope de Acciones](#tope-de-acciones)
+  - [Valor](#valor)
+  - [Tope de Monedas](#tope-de-monedas)
+  - [Tope de Acciones](#tope-de-acciones)
 - [Jugador](#jugador)
-    - [Monedas](#monedas)
+  - [Monedas](#monedas)
 - [Juego](#juego)
-    - [Personajes](#personajes)
-    - [Guerrero](#guerrero)
-        - [Arquero](#arquero)
-        - [Mago](#mago)
-    - [Enemigos](#enemigos)
-        - [Orco](#orco)
-        - [Golbin](#golbin)
-        - [Trampas](#trampas)
-    - [Interruptores](#interruptores)
+  - [Personajes](#personajes)
+  - [Guerrero](#guerrero)
+    - [Arquero](#arquero)
+    - [Mago](#mago)
+  - [Enemigos](#enemigos)
+    - [Orco](#orco)
+    - [Golbin](#golbin)
+    - [Trampas](#trampas)
+  - [Interruptores](#interruptores)
 - [Mazmorra Ejemplo](#mazmorra-ejemplo)
-    - [Empezamos!](#empezamos)
-        - [Alternativa 1](#alternativa-1)
-        - [Alternativa 2](#alternativa-2)
+  - [Empezamos!](#empezamos)
+    - [Alternativa 1](#alternativa-1)
+    - [Alternativa 2](#alternativa-2)
 
 # Modalidades
 
@@ -65,15 +65,15 @@ Las monedas son el recurso del jugador para comprar [personajes](#Personajes) an
 
 Posibles ideas:
 
-* Pagar antes de entrar a una mazmorra.
-* Pagar monedas por en cada intento (y que las gane el creador de la mazmorra).
+- Pagar antes de entrar a una mazmorra.
+- Pagar monedas por en cada intento (y que las gane el creador de la mazmorra).
 
 # Juego
 
 El juego consiste en que el jugador logre alcanzar el cofre con al menos uno de sus [personajes](#Personajes).
 
-* Si el jugador supera el máximo de acciones pierde.
-* Si todos los [personajes](#Personajes) mueren el jugador pierde.
+- Si el jugador supera el máximo de acciones pierde.
+- Si todos los [personajes](#Personajes) mueren el jugador pierde.
 
 ## Personajes
 
@@ -81,8 +81,8 @@ Todos los personajes poseen como estadísticas salud, daño, precio y patrón de
 
 Posibles ideas:
 
-* Que existan personajes con movimientos distintos.
-* Que cada personaje posea una habilidad especial.
+- Que existan personajes con movimientos distintos.
+- Que cada personaje posea una habilidad especial.
 
 |  Nombre  | Salud | Daño   | Precio |  Patrón de Ataque |
 |:---------|:-----:|:------:|:------:|:--------------:|
@@ -138,10 +138,10 @@ Una casilla con la letra i simboliza que la casilla es de tipo interruptor, lo q
 
 Posibles ideas:
 
-* Interruptores vuelvan a cerrar si se vuelve a caminar sobre ella.
-* Interruptores que requieran accionar manualmente (que no se activen caminando).
-* Que los interruptores se activen al tener un enemigo encima o un interruptor especifico con esta característica.
-* Que se pueda usar los interruptores para activar/desactivar trampas.
+- Interruptores vuelvan a cerrar si se vuelve a caminar sobre ella.
+- Interruptores que requieran accionar manualmente (que no se activen caminando).
+- Que los interruptores se activen al tener un enemigo encima o un interruptor especifico con esta característica.
+- Que se pueda usar los interruptores para activar/desactivar trampas.
 
 # Mazmorra Ejemplo
 
