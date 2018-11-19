@@ -18,7 +18,7 @@ Juego de estrategia donde deberás adentrarte en una mazmorra para alcanzar el t
   - [Monedas](#monedas)
 - [Juego](#juego)
   - [Personajes](#personajes)
-  - [Guerrero](#guerrero)
+    - [Guerrero](#guerrero)
     - [Arquero](#arquero)
     - [Mago](#mago)
   - [Enemigos](#enemigos)
@@ -90,7 +90,7 @@ Posibles ideas:
 | Arquero  |   4   |   4    |   2    |[Ver](#Arquero) |
 |  Mago    |   3   |   5    |   3    |  [Ver](#Mago)  |
 
-## Guerrero
+### Guerrero
 
 ![apwarrior](assets/attack-pattern-warrior.png?raw=**true**)
 
