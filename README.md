@@ -27,7 +27,7 @@ Juego de estrategia donde deberás adentrarte en una mazmorra para alcanzar el t
     - [Trampas](#trampas)
   - [Interruptores](#interruptores)
 - [Mazmorra Ejemplo](#mazmorra-ejemplo)
-  - [Empezamos!](#empezamos)
+  - [Empezamos](#empezamos)
     - [Alternativa 1](#alternativa-1)
     - [Alternativa 2](#alternativa-2)
 
@@ -149,7 +149,7 @@ En el siguiente ejemplo vamos a resolver la siguiente mazmorra en sus diferentes
 
 ![dungeon10](assets/dungeon-1.0.png?raw=**true**)
 
-## Empezamos!
+## Empezamos
 
 ![dungeon11](assets/dungeon-1.1.png?raw=true)
 
