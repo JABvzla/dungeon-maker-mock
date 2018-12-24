@@ -1,0 +1,22 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended"],
+    "jsRules": {
+    },
+    "rules": {
+        "whitespace": true,
+        "no-consecutive-blank-lines": true,
+        "completed-docs": [true, "functions", "methods"],
+        "jsdoc-format": true,
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+        "max-line-length": [false],
+        "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+        "object-literal-sort-keys": false,
+        "interface-name": [true, "never-prefix"],
+        "arrow-parens": [true, "ban-single-arg-parens"],
+        "typedef": [true, "call-signature"],
+		"no-any": true,
+		"no-console": false
+    },
+    "rulesDirectory": []
+}
