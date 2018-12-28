@@ -24,12 +24,7 @@ module.exports = {
 			{
 				test: /\.tsx?$/,
 				loader: 'ts-loader'
-			},
-			{
-				test: /\.tsx?$/,
-				loader: 'prettier-loader',
-				exclude: /node_modules/
-			},
+			}
 		]
 	},
 	resolve: {
