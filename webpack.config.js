@@ -1,3 +1,5 @@
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
 module.exports = {
 	mode: 'development',
 	devtool: "inline-source-map",
@@ -8,7 +10,7 @@ module.exports = {
 	module: {
 		rules: [
             {
-                test: /\.ts$/,
+                test: /\.tsx?$/,
                 enforce: 'pre',
                 use: [
                     {
@@ -23,11 +25,15 @@ module.exports = {
             },
 			{
 				test: /\.tsx?$/,
-				loader: 'ts-loader'
+				loader: 'ts-loader',
+                options: {
+                    transpileOnly: true
+                }
 			}
 		]
 	},
 	resolve: {
-		extensions: [".ts", ".js"]
+		plugins: [new TsconfigPathsPlugin()],
+		extensions: ['.ts', '.js', '.json']
 	}
 };

@@ -1,0 +1,7 @@
+const CONTAINER = {
+  WIDTH: 800,
+  HEIGHT: 600,
+  BACKGROUND_COLOR: 0x1099bb,
+};
+
+export { CONTAINER };
