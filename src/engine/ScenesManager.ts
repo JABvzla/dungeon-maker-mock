@@ -8,24 +8,57 @@ import IntroScene from "scenes/IntroScene";
  * Scene manager.
  */
 class ScenesManager {
+  /**
+   * Get single instance for ScenesManager.
+   *
+   * @returns {ScenesManager} ScenesManager `singleton` intance.
+   */
+  public static getInstance(): ScenesManager {
+    if (!ScenesManager.instance) {
+      ScenesManager.instance = new ScenesManager();
+    }
+    return ScenesManager.instance;
+  }
+
+  private static instance: ScenesManager;
   // List of scenes available.
-  public static scenes: Scene[] = [new IntroScene("intro"), new GameOverScene("game_over")];
+  private _scenes: Scene[] = [new IntroScene("intro"), new GameOverScene("game_over")];
   // Secene selected.
-  public static currentScene: Scene;
+  private _currentScene: Scene = new Scene();
+
+  private constructor() {}
+
+  /**
+   * Get current selected scene.
+   *
+   * @returns {Scene} never null.
+   */
+  get currentScene(): Scene {
+    return this._currentScene;
+  }
+
+  /**
+   * Get list of scenes selectables.
+   *
+   * @returns {Scene[]} never null.
+   */
+  get scenes(): Scene[] {
+    return this._scenes;
+  }
 
   /**
    * Set current scene by name.
    *
    * @param {string} name - name from scene to change not null.
    */
-  public static select(name: string): void {
-    if (ScenesManager.currentScene && ScenesManager.currentScene.name === name) {
+  public select(name: string): void {
+    if (this._currentScene && this._currentScene.name === name) {
       return;
     }
-    ScenesManager.scenes.map(scene => {
+    this.scenes.map(scene => {
       if (scene.name === name) {
-        ScenesManager.currentScene = scene;
-        ScenesManager.onChange();
+        this._currentScene = scene;
+        this.onChange();
         return;
       }
     });
@@ -34,9 +67,9 @@ class ScenesManager {
   /**
    * Event is trigger when currentScene has changed.
    */
-  public static onChange(): void {
+  public onChange(): void {
     // onChange event
   }
 }
 
-export default ScenesManager;
+export default ScenesManager.getInstance();
