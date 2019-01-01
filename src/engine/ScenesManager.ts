@@ -35,7 +35,7 @@ class ScenesManager {
    * Event is trigger when currentScene has changed.
    */
   public static onChange(): void {
-    console.log("ScenesManager", "change");
+    // onChange event
   }
 }
 
