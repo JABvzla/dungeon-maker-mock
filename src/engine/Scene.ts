@@ -4,12 +4,12 @@ import * as PIXI from "pixi.js";
  * Scene is a main container.
  */
 class Scene extends PIXI.Container {
-  public name: string;
+  private _name: string;
 
   constructor(name: string = "undefined") {
     super();
 
-    this.name = name;
+    this._name = name;
   }
 
   /**
@@ -19,6 +19,15 @@ class Scene extends PIXI.Container {
    */
   public update(dt: number): void {
     // Add logic from you scene here.
+  }
+
+  /**
+   * Get name of scene.
+   *
+   * @returns {string} Name of scene.
+   */
+  get name(): string {
+    return this._name;
   }
 }
 

@@ -19,6 +19,9 @@ class ScenesManager {
    * @param {string} name - name from scene to change not null.
    */
   public static select(name: string): void {
+    if (ScenesManager.currentScene && ScenesManager.currentScene.name === name) {
+      return;
+    }
     ScenesManager.scenes.map(scene => {
       if (scene.name === name) {
         ScenesManager.currentScene = scene;
