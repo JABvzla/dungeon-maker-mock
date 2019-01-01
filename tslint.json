@@ -16,6 +16,7 @@
         "object-literal-sort-keys": false,
         "interface-name": [true, "never-prefix"],
         "arrow-parens": [true, "ban-single-arg-parens"],
+        "array-type": [true, "array"],
         "typedef": [true, "call-signature"],
 		"no-any": true,
         "no-console": false,

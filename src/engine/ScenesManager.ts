@@ -25,6 +25,7 @@ class ScenesManager {
   private _scenes: Scene[] = [new IntroScene("intro"), new GameOverScene("game_over")];
   // Secene selected.
   private _currentScene: Scene = new Scene();
+  private _onChangeEvents: (() => void)[] = [];
 
   private constructor() {}
 
@@ -58,17 +59,43 @@ class ScenesManager {
     this.scenes.map(scene => {
       if (scene.name === name) {
         this._currentScene = scene;
-        this.onChange();
+        this.onChangeTrigger();
         return;
       }
     });
   }
 
   /**
-   * Event is trigger when currentScene has changed.
+   * Add onChange event
+   *
+   * Is trigger when currentScene has changed.
+   *
+   * @param {void} event - Event to be added.
+   * @returns {number} Id from event.
    */
-  public onChange(): void {
-    // onChange event
+  public addOnChange(event: () => void): number {
+    this._onChangeEvents.push(event);
+    return this._onChangeEvents.length - 1;
+  }
+
+  /**
+   * Disable onChange event by id.
+   *
+   * @param {number} eventId - Event to be disabled by id.
+   */
+  public removeOnChange(eventId: number): void {
+    this._onChangeEvents[eventId] = () => {
+      // clear event
+    };
+  }
+
+  /**
+   * Execute onChange events.
+   */
+  private onChangeTrigger(): void {
+    this._onChangeEvents.map(e => {
+      e();
+    });
   }
 }
 

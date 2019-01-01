@@ -8,10 +8,10 @@ const app = new PIXI.Application(CONTAINER.WIDTH, CONTAINER.HEIGHT, {
 
 document.body.appendChild(app.view);
 
-ScenesManager.onChange = () => {
+ScenesManager.addOnChange(() => {
   app.stage.removeChildren();
   app.stage.addChild(ScenesManager.currentScene);
-};
+});
 
 ScenesManager.select("intro");
 
